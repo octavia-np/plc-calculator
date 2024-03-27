@@ -21,6 +21,7 @@ class MainWindow(QMainWindow):
     button_9:QPushButton
     button_0:QPushButton
     button_delete:QPushButton
+    button_ce:QPushButton
     button_plus:QPushButton
     button_star:QPushButton
     button_equal:QPushButton
@@ -48,6 +49,7 @@ class MainWindow(QMainWindow):
         self.button_0.clicked.connect(lambda: self.push("0"))
 
         self.button_delete.clicked.connect(self.push_delete)
+        self.button_ce.clicked.connect(self.push_ce)
 
         self.button_plus.clicked.connect(lambda: self.push("+"))
         self.button_star.clicked.connect(lambda: self.push("*"))
@@ -67,6 +69,9 @@ class MainWindow(QMainWindow):
         current_text:str = self.input_text.text()
         current_text = current_text[:-1]
         self.input_text.setText(current_text)
+    
+    def push_ce(self):
+        self.input_text.clear()
     
     def push_equal(self):
         print("Calculate")
