@@ -1,4 +1,4 @@
-# Plc-Calculator-2.0
+# PLC: CALCULATOR 2.0 (three outputs)
 
 ### Dependencies 
 - Python (latest version)
@@ -6,7 +6,7 @@
 
 ### Installation
 - clone repository
-  ``` git clone <repository-url><\code> ```
+  ``` git clone <repository-url> ```
 - install required dependencies using pip
   ``` pip install <dependency> ```
 
